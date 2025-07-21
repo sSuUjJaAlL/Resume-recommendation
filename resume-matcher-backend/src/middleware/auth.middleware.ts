@@ -44,6 +44,7 @@ async function checkToken(
 
     req.user= sendToCheck
     req.token= token 
+    next()
 }
 catch(err){
     next(err)
