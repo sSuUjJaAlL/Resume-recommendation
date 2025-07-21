@@ -1,0 +1,20 @@
+{
+  "name": "status-management-service",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start:consumer": "nodemon ./src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "amqplib": "^0.10.8",
+    "dotenv": "^17.2.0",
+    "kleur": "^4.1.5",
+    "mongoose": "^8.16.4",
+    "winston": "^3.17.0"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "resume-matcher-elastic-service",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start:elastic": "nodemon ./src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@elastic/elasticsearch": "^8.18.2",
+    "@types/amqplib": "^0.10.7",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.0.15",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "amqplib": "^0.10.8",
+    "dotenv": "^17.2.0",
+    "kafkajs": "^2.2.4",
+    "kleur": "^4.1.5",
+    "mongoose": "^8.16.4",
+    "winston": "^3.17.0"
+  }
+}
