@@ -10,5 +10,5 @@ const logincontroller= getAuthInstances().loginController
 authRouter.post("/signup",signUpcontroller);
 
 authRouter.post("/login",logincontroller)
-authRouter.get("/getProfile",checkToken,(req,res)=>{res.send(`I am subodh`)})
+authRouter.get("/getProfile",checkToken,(req,res)=>{res.send(``)})
 export default authRouter;

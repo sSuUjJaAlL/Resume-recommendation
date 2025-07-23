@@ -5,11 +5,14 @@ import initalizeMiddleware from "./middleware/server.middleware";
 import initalizeRouters from "./routers/server.router";
 import { getEnvValue } from "./utils/env.utils";
 import connectDatabase from "./database/connect";
+import { connecttoElastic } from "./config/elastic.config";
+import { getElasticClient } from "./elasticSearch/connect";
 
 async function startExpressServer(app: Application) {
   try {
     await initalizeMiddleware(app);
     await initalizeRouters(app);
+    await getElasticClient();
     connectDatabase()
       .then(() => {
         app.listen(getEnvValue("PORT"), () => {
